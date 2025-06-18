@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - My Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: url('o2.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+        .fade-slide {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeSlideIn 1s ease forwards;
+        }
+        @keyframes fadeSlideIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+        video {
+            border-radius: 1rem;
+            outline: none;
+        }
+    </style>
+</head>
+<body class="font-poppins text-gray-800 bg-gray-100 bg-opacity-80 min-h-screen flex flex-col">
+    <header class="bg-gradient-to-r from-teal-600 to-teal-800 text-white py-8 shadow-lg rounded-b-2xl">
+        <h1 class="text-4xl md:text-5xl font-bold text-center">Welcome to My Personal Website</h1>
+    </header>
+
+    <nav class="bg-white py-5 shadow-md rounded-b-xl">
+        <div class="max-w-5xl mx-auto flex justify-center gap-5 md:gap-8 flex-wrap">
+            <a href="index.html" class="text-teal-600 font-semibold text-lg hover:text-red-500 hover:bg-teal-100 px-4 py-2 rounded-full transition-all duration-300">Home</a>
+            <a href="aboutme.html" class="text-teal-600 font-semibold text-lg hover:text-red-500 hover:bg-teal-100 px-4 py-2 rounded-full transition-all duration-300">About Me</a>
+            <a href="education.html" class="text-teal-600 font-semibold text-lg hover:text-red-500 hover:bg-teal-100 px-4 py-2 rounded-full transition-all duration-300">Education</a>
+            <a href="family.html" class="text-teal-600 font-semibold text-lg hover:text-red-500 hover:bg-teal-100 px-4 py-2 rounded-full transition-all duration-300">Family</a>
+            <a href="experience.html" class="text-teal-600 font-semibold text-lg hover:text-red-500 hover:bg-teal-100 px-4 py-2 rounded-full transition-all duration-300">Experience</a>
+            <a href="friends.html" class="text-teal-600 font-semibold text-lg hover:text-red-500 hover:bg-teal-100 px-4 py-2 rounded-full transition-all duration-300">Friends</a>
+            <a href="hobby.html" class="text-teal-600 font-semibold text-lg hover:text-red-500 hover:bg-teal-100 px-4 py-2 rounded-full transition-all duration-300">Hobby</a>
+            <a href="favouriteplace.html" class="text-teal-600 font-semibold text-lg hover:text-red-500 hover:bg-teal-100 px-4 py-2 rounded-full transition-all duration-300">Fav Place</a>
+            <a href="favouritefood.html" class="text-teal-600 font-semibold text-lg hover:text-red-500 hover:bg-teal-100 px-4 py-2 rounded-full transition-all duration-300">Fav Food</a>
+            <a href="gallery.html" class="text-teal-600 font-semibold text-lg hover:text-red-500 hover:bg-teal-100 px-4 py-2 rounded-full transition-all duration-300">Gallery</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-5xl mx-auto px-6 py-10">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-teal-700 fade-slide mb-8">My Experience</h2>
+        <div class="bg-white rounded-2xl shadow-lg p-6 fade-slide mb-8 card-hover border border-teal-100">
+            <video controls class="mx-auto rounded-lg max-w-full h-auto" style="max-height: 400px;">
+                <source src="ppak3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="text-center text-lg mt-4">Highlights of my experiences</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-2xl shadow-lg p-6 fade-slide card-hover border border-teal-100">
+                <p class="text-center text-lg">Former Program Director for HBA x Team Building Peers 2024</p>
+                <div class="bg-white rounded-2xl shadow-lg p-6 fade-slide mb-8 card-hover border border-teal-100">
+            <video controls class="mx-auto rounded-lg max-w-full h-auto" style="max-height: 400px;">
+                <source src="hba.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-6 fade-slide card-hover border border-teal-100">
+                <p class="text-center text-lg">Internship at Perbadanan Perpustakaan Awam Kelantan for 2 months</p>
+                <img src="PPAK1.jpg" alt="Perbadanan Perpustakaan Awam Kelantan" class="mx-auto rounded-xl mt-4" style="width: 200px; height: 200px; object-fit: cover;">
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-6 fade-slide card-hover border border-teal-100">
+                <p class="text-center text-lg">Worked at 7 Eleven Ketereh</p>
+                <img src="7e.jpg" alt="7 Eleven Ketereh" class="mx-auto rounded-xl mt-4" style="width: 200px; height: 200px; object-fit: cover;">
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-6 fade-slide card-hover border border-teal-100">
+                <p class="text-center text-lg">Expert in technical and PA systems</p>
+                <img src="hakems.jpg" alt="technical" class="mx-auto rounded-xl mt-4" style="width: 200px; height: 200px; object-fit: cover;">
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gradient-to-r from-teal-600 to-teal-800 text-white text-center py-5 rounded-t-2xl opacity-90 shadow-lg">
+        <p class="text-lg">All rights reserved © farisizz364@gmail.com</p>
+    </footer>
+</body>
+</html>

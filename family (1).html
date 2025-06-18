@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family - My Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: url('full.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+        .fade-slide {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeSlideIn 1s ease forwards;
+        }
+        @keyframes fadeSlideIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="font-poppins text-gray-800 bg-gray-100 bg-opacity-80 min-h-screen flex flex-col">
+    <header class="bg-gradient-to-r from-teal-600 to-teal-800 text-white py-8 shadow-lg rounded-b-2xl">
+        <h1 class="text-4xl md:text-5xl font-bold text-center">Welcome to My Personal Website</h1>
+    </header>
+
+    <nav class="bg-white py-5 shadow-md rounded-b-xl">
+        <div class="max-w-5xl mx-auto flex justify-center gap-5 md:gap-8 flex-wrap">
+            <a href="index.html" class="text-teal-600 font-semibold text-lg hover:text-red-500 hover:bg-teal-100 px-4 py-2 rounded-full transition-all duration-300">Home</a>
+            <a href="aboutme.html" class="text-teal-600 font-semibold text-lg hover:text-red-500 hover:bg-teal-100 px-4 py-2 rounded-full transition-all duration-300">About Me</a>
+            <a href="education.html" class="text-teal-600 font-semibold text-lg hover:text-red-500 hover:bg-teal-100 px-4 py-2 rounded-full transition-all duration-300">Education</a>
+            <a href="family.html" class="text-teal-600 font-semibold text-lg hover:text-red-500 hover:bg-teal-100 px-4 py-2 rounded-full transition-all duration-300">Family</a>
+            <a href="experience.html" class="text-teal-600 font-semibold text-lg hover:text-red-500 hover:bg-teal-100 px-4 py-2 rounded-full transition-all duration-300">Experience</a>
+            <a href="friends.html" class="text-teal-600 font-semibold text-lg hover:text-red-500 hover:bg-teal-100 px-4 py-2 rounded-full transition-all duration-300">Friends</a>
+            <a href="hobby.html" class="text-teal-600 font-semibold text-lg hover:text-red-500 hover:bg-teal-100 px-4 py-2 rounded-full transition-all duration-300">Hobby</a>
+            <a href="favouriteplace.html" class="text-teal-600 font-semibold text-lg hover:text-red-500 hover:bg-teal-100 px-4 py-2 rounded-full transition-all duration-300">Fav Place</a>
+            <a href="favouritefood.html" class="text-teal-600 font-semibold text-lg hover:text-red-500 hover:bg-teal-100 px-4 py-2 rounded-full transition-all duration-300">Fav Food</a>
+            <a href="gallery.html" class="text-teal-600 font-semibold text-lg hover:text-red-500 hover:bg-teal-100 px-4 py-2 rounded-full transition-all duration-300">Gallery</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-5xl mx-auto px-6 py-10">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-teal-700 fade-slide mb-8">My Family</h2>
+        <p class="text-lg text-center fade-slide mb-8">I have 4 siblings, and I'm the youngest</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-2xl shadow-lg p-6 fade-slide card-hover border border-teal-100">
+                <img src="kakak.jpg" alt="Farhana Azmi" class="mx-auto rounded-full mb-4" style="width: 300px; height: 300px; object-fit: cover;">
+                <h3 class="text-xl font-semibold text-center text-teal-600">Farhana Azmi</h3>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-6 fade-slide card-hover border border-teal-100">
+                <img src="abg1.jpg" alt="Fareez Azmi" class="mx-auto rounded-full mb-4" style="width: 300px; height: 300px; object-fit: cover;">
+                <h3 class="text-xl font-semibold text-center text-teal-600">Fareez Azmi</h3>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-6 fade-slide card-hover border border-teal-100">
+                <img src="F2.jpg" alt="Family Photo" class="mx-auto rounded-xl mb-4" style="width: 300px; height: 300px; object-fit: cover;">
+                <h3 class="text-xl font-semibold text-center text-teal-600">Family Photo</h3>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-6 fade-slide card-hover border border-teal-100">
+                <img src="ilman.jpg" alt="Nephew Ilman" class="mx-auto rounded-full mb-4" style="width: 200px; height: 200px; object-fit: cover;">
+                <h3 class="text-xl font-semibold text-center text-teal-600">Nephew Ilman</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-2xl shadow-lg p-6 fade-slide card-hover border border-teal-100">
+                <img src="uwais.jpg" alt="Uwais RIfain" class="mx-auto rounded-full mb-4" style="width: 300px; height: 300px; object-fit: cover;">
+                <h3 class="text-xl font-semibold text-center text-teal-600">Uwais Rifain</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-2xl shadow-lg p-6 fade-slide card-hover border border-teal-100">
+                <img src="aryan 2.jpg" alt="aryan 2" class="mx-auto rounded-full mb-4" style="width: 1000px; height: 300px; object-fit: cover;">
+                <h3 class="text-xl font-semibold text-center text-teal-600">Aryan</h3>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gradient-to-r from-teal-600 to-teal-800 text-white text-center py-5 rounded-t-2xl opacity-90 shadow-lg">
+        <p class="text-lg">All rights reserved © farisizz364@gmail.com</p>
+    </footer>
+</body>
+</html>
